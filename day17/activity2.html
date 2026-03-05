@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>scopes of variables in functions</title>
+    </head>
+    <body>
+  <p>a function can access variables declared within it</p>   
+        <button onclick="myFunction()">Click me!</button>
+        <script>
+            var a = 10;
+            function myFunction() {
+              var x = 5;
+              document.write(a*x);
+            }
+        </script>   
+    </body>
+</html>
