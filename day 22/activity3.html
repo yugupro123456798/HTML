@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Static Methods in JavaScript classes</title>
+    </head>
+    <body>
+        <h2>Static Methods in JavaScript classes</h2>
+        <p>Static methods are defined on the class itself, not on instances of the class. They are called using the class name rather than an instance.</p>
+        <p id="staticDetails"></p>
+        <script>
+            class MathUtils {
+                static add(a, b) {
+                    return a + b;
+                }
+
+                static subtract(a, b) {
+                    return a - b;
+                }
+            }
+
+            const sum = MathUtils.add(5, 3);
+            const difference = MathUtils.subtract(5, 3);
+            document.getElementById('staticDetails').innerHTML = `Sum: ${sum} <br> Difference: ${difference}`;
+        </script>
+    </body>
+</html>
