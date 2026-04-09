@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Error Handling</title>
+    </head>
+    <body>
+        <p id="errorresult"></p>
+        <script>
+            try {
+                alert("welcome message");
+            }
+                catch (err) {
+                    document.getElementById("errorresult").innerHTML = "Error: " + err.message;
+                }
+        </script>
+    </body>
+</html>

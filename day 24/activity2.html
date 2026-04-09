@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Error Handling</title>
+    </head>
+    <body>
+        <h2>JavaScript Error Handling</h2>
+        <p id="errorresult"></p>
+        <script>
+            try {
+                var x = 10;
+                var y = 0;
+                var z = x / y;
+                document.getElementById("errorresult").innerHTML = z;
+            }
+             catch (err) {
+                document.getElementById("errorresult").innerHTML = "Error: " + err.message;
+            }
+        </script>
+    </body>
+</html>
