@@ -36,5 +36,30 @@
             <a href="Gallery.html">Gallery</a>
             <a href="Contact Us.html">Contact Us</a>
        </div> 
+       <section>
+        <img src="pic1.jpg" alt="pic1" class="mySlides" style="width:100%;height: 500px;">
+         <img src="pic2.jpg" alt="pic2" class="mySlides" style="width:100%;height: 500px;">
+          <img src="pic3.jpg" alt="pic3" class="mySlides" style="width:100%;height: 500px;">
+           <img src="pic4.jpg" alt="pic4" class="mySlides" style="width:100%;height: 500px;">
+             <img src="pic5.jpg" alt="pic5" class="mySlides" style="width:100%;height: 500px;">
+               <img src="pic6.jpg" alt="pic6" class="mySlides" style="width:100%;height: 500px;">
+                 <img src="pic7.jpg" alt="pic7" class="mySlides" style="width:100%;height: 500px;">
+       </section>
+       <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+       </script>
     </body>
 </html>
